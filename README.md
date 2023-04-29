@@ -64,3 +64,44 @@ function [X,C,Xn,Cn] = smote(X, N, k, options)
         N = max(nC)./nC-1; % 計算每個類別的過採樣百分比，以達到與多
 
 ```
+
+* 這個程式用於讀取來自文件夾的心跳聲音數據，對其進行SMOTE算法過採樣，然後將其轉換為灰度圖像保存到文件夾中。
+
+```
+type = ['F'; 'S']; % 聲音類型
+L = 400; % 每個心跳聲音樣本的長度
+k = 10; % 考慮 5 個最近鄰居
+N = 9; % 過採樣到原始數據集的 1.5 倍大小
+
+for i = 1:size(type, 1)
+    % 讀取當前類型的心跳聲音數據
+    X = zeros(500, L);
+    for j = 1:500
+        load(['D:\111專題\stft\raw data-', int2str(L), '\', type(i,:), '\', type(i,:), '_', num2str(j), '.mat']);
+        X(j,:) = x(1:L);
+    end
+    
+    % 對數據應用 SMOTE 過採樣
+    Y = ones(N*size(X,1), 1);
+    Y(1:size(X,1)) = 0;
+    options.Class = Y;
+    [X_smote, ~] = smote(X, N, k);
+
+    % 將數據重新縮放到 [0,1] 範圍內
+    X_smote = X_smote - min(X_smote(:));
+    X_smote = X_smote ./ max(X_smote(:));
+    
+    % 將過採樣的數據保存為灰度圖像
+    L_sqrt = sqrt(L);
+    for j = 1:size(X_smote, 1)
+        s_x = reshape(X_smote(j,:), L_sqrt, L_sqrt);
+        imagesc(s_x);
+        colormap(gray);
+        set(gca, 'xtick', [], 'xticklabel', []);
+        set(gca, 'ytick', [], 'yticklabel', []);
+        saveas(gcf, ['D:\111專題\gray scale\gray scale_2-', int2str(L), '\5TYPE\', type(i,:), '\', type(i,:), '_', num2str(j), '.jpg']);
+    end
+end
+```
+* 這個程序中， type 是兩種不同類型的心跳聲音類型。對於每種類型，程序會從文件夾中讀取 500 條心跳聲音數據，每條數據的長度都為 L。然後，程序使用SMOTE算法對這些數據進行過採樣，並將其保存為灰度圖像。保存的圖像會按照數據的類型（即 type）進行分組，保存在文件夾
+
