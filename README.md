@@ -34,11 +34,12 @@ b) Data segmentation and generation of grayscale image
 
     設定一個採樣倍率 N，也就是對每個樣本需要生成幾個合成樣本
     設定一個近鄰值 K ，針對該樣本找出 K 個最近鄰樣本並從中隨機選一個
-    根據以下公式來創造 N 個樣本
+   
 
 
 * 這個程式是實現SMOTE (Synthetic Minority Over-sampling Technique)算法的函數，該算法用於解決不平衡數據集的問題
-
+##  SMOTE:
+`X_smote = smote(X, N, k)` 
 ### Inputs:
 - `X`: Original dataset `(n x d)` matrix
 - `N`: Percentage of data-augmentation intended, Typically, N > 100, if N < 100, then N is set to 100. `(scalar)`
