@@ -26,7 +26,7 @@ b) Data segmentation and generation of grayscale image
 
 
 ## SMOTE (Synthetic Minority Over-sampling Technique) :
-這個程式是實現SMOTE (Synthetic Minority Over-sampling Technique)算法的函數，該算法用於解決不平衡數據集的問題
+* 這個程式是實現SMOTE (Synthetic Minority Over-sampling Technique)算法的函數，該算法用於解決不平衡數據集的問題
 
 ```
 function [X,C,Xn,Cn] = smote(X, N, k, options)
@@ -39,7 +39,7 @@ function [X,C,Xn,Cn] = smote(X, N, k, options)
     end
 ```
 
-這個函數有四個輸入參數，其中 X 是觀察矩陣，N 是合成量，k 是考慮的最近鄰居數量，options 包含選擇性的類向量和合成向量。
+* 這個函數有四個輸入參數，其中 X 是觀察矩陣，N 是合成量，k 是考慮的最近鄰居數量，options 包含選擇性的類向量和合成向量。
 
 ```
     % Handle optional Class vector
@@ -59,7 +59,7 @@ function [X,C,Xn,Cn] = smote(X, N, k, options)
         N = max(nC)./nC-1; % 計算每個類別的過採樣百分比，以達到與多
 ```
 
-這裡處理可選的類向量。如果 options 中存在 Class，則將其存儲在 C 中。否則，C 被設置為一個大小為 X 行數的向量，並且所有觀察被歸類為類別 1。uC 存儲所有不同的類別，nC 則記錄每個類別的觀察數量。
+* 這裡處理可選的類向量。如果 options 中存在 Class，則將其存儲在 C 中。否則，C 被設置為一個大小為 X 行數的向量，並且所有觀察被歸類為類別 1。uC 存儲所有不同的類別，nC 則記錄每個類別的觀察數量。
 
 ```
     % Handle N - must have one number for each class
