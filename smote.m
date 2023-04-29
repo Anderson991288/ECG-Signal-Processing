@@ -53,9 +53,7 @@
 %       the majority class. Using the default 5 nearest neighbors in this
 %       example.
 %
-% Author: Bjarke Skogstad Larsen <bjarke.skogstad@acarix.com>
-% Updated: 2020-05-07
-%
+
 function [X,C,Xn,Cn] = smote(X, N, k, options)
     arguments
         X (:,:) % Observation Matrix
