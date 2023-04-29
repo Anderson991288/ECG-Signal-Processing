@@ -1,6 +1,8 @@
 # ECG-Signal-Processing
 ## Convert electrocardiosignal into 2-D grayscale instead of traditional ECG.
 
+### Paper : Research on Personal Identity Verification Based on Convolutional Neural Network
+
 a) Data structure conversion
  * transforming data from 1D structure of ECG signal to 2D structure data
 
