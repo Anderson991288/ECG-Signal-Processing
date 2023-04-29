@@ -28,7 +28,24 @@ b) Data segmentation and generation of grayscale image
 
 
 ## SMOTE (Synthetic Minority Over-sampling Technique) :
+
+【SMOTE 方法 : 合成少數過採樣方法】
+我們引進了新的方法叫做 SMOTE 方法，這是 2002 年提出的一篇論文，主要概念也就是在少數樣本位置近的地方，人工合成一些樣本，整個算法的流程如下 :
+
+    設定一個採樣倍率 N，也就是對每個樣本需要生成幾個合成樣本
+    設定一個近鄰值 K ，針對該樣本找出 K 個最近鄰樣本並從中隨機選一個
+    根據以下公式來創造 N 個樣本
+
+
 * 這個程式是實現SMOTE (Synthetic Minority Over-sampling Technique)算法的函數，該算法用於解決不平衡數據集的問題
+
+### Inputs:
+- `X`: Original dataset `(n x d)` matrix
+- `N`: Percentage of data-augmentation intended, Typically, N > 100, if N < 100, then N is set to 100. `(scalar)`
+- `k`: number of nearest neighbors to consider while performing augmentation `(scalar)`
+ 
+### Outputs:
+- `X_smote`: augmented dataset containing original data as well. `(m x d)` matrix, where `m > n`
 
 ```
 function [X,C,Xn,Cn] = smote(X, N, k, options)
