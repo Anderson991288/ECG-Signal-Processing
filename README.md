@@ -37,7 +37,7 @@ b) Data segmentation and generation of grayscale image
    
 
 
-##  這個程式是實現SMOTE (Synthetic Minority Over-sampling Technique)算法的函數，該算法用於解決不平衡數據集的問題
+##  實現SMOTE算法，解決不平衡數據集的問題
 ###  SMOTE:
 `X_smote = smote(X, N, k)` 
 ### Inputs:
