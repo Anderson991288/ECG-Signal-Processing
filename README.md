@@ -39,7 +39,7 @@ b) Data segmentation and generation of grayscale image
 
 ##  實現SMOTE算法，解決不平衡數據集的問題
 ###  SMOTE:
-`X_smote = smote(X, N, k)` 
+- `X_smote = smote(X, N, k)` 
 ### Inputs:
 - `X`: Original dataset `(n x d)` matrix
 - `N`: Percentage of data-augmentation intended, Typically, N > 100, if N < 100, then N is set to 100. `(scalar)`
