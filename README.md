@@ -19,6 +19,12 @@ b) Data segmentation and generation of grayscale image
 
 ![螢幕擷取畫面 2023-04-23 111235](https://user-images.githubusercontent.com/68816726/233817700-548381fb-f91f-492e-855b-a71c87299a5c.png)
 
+
+![圖片](https://user-images.githubusercontent.com/68816726/235293407-ebf3ffec-a059-480f-a283-4208a6b2ec94.png)
+
+![圖片](https://user-images.githubusercontent.com/68816726/235293431-968b70ea-3810-4a3b-ad61-59b0e48b2f5e.png)
+
+
 ## SMOTE (Synthetic Minority Over-sampling Technique) :
 這個程式是實現SMOTE (Synthetic Minority Over-sampling Technique)算法的函數，該算法用於解決不平衡數據集的問題
 
