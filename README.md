@@ -159,4 +159,7 @@ end
 
 * 使用SMOTE後的結果，分別使用不同網路做測試
 
+![圖片](https://user-images.githubusercontent.com/68816726/236611552-920e5e36-a6b8-4be8-aaae-d690a9400ad5.png)
+
+
 ![圖片](https://user-images.githubusercontent.com/68816726/236611474-a79fb992-070c-40ed-90df-29d61e990dae.png)
