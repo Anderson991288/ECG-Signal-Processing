@@ -1,9 +1,9 @@
 # QRS Detection Algorithm 
 
 ### Find the R peak of the ECG signal. 
-• Verify the right location as Goldindex vector. 
-• Assign the variable of index to store the peak index. 
-• ECG data 
+* Verify the right location as Goldindex vector. 
+* Assign the variable of index to store the peak index. 
+* ECG data 
 - Number 100/102 
 
 - 650000 samples 
