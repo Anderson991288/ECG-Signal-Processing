@@ -5,7 +5,9 @@
 • Assign the variable of index to store the peak index. 
 • ECG data 
 - Number 100/102 
+
 - 650000 samples 
+
 - Match window = ±15 
 
 ### 使用到的函數 :
