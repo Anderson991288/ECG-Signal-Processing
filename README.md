@@ -131,3 +131,28 @@ end
 ```
 * 這個程序中， type 是兩種不同類型的心跳聲音類型。對於每種類型，程序會從文件夾中讀取 500 條心跳聲音數據，每條數據的長度都為 L。然後，程序使用SMOTE算法對這些數據進行過採樣，並將其保存為灰度圖像。保存的圖像會按照數據的類型（即 type）進行分組，保存在文件夾
 
+
+* 針對F-type 和 S-type 資料量不足的問題，使用SMOTE來增加資料量。
+
+```
+y = [];
+N = 800;
+L = 400;
+type = ['N';'S';'V';'F';'Q'];
+
+for k = 4
+    for i = 1:N
+        load(['D:\111專題\stft\raw data-',int2str(L),'\',type(k,1),'\',type(k,1),'_',num2str(i),'.mat']);
+         z = x;
+         y(i,1:L+1) = z;
+    end
+    R = 2;%放大倍數
+    X = smote(y, R-1 ,R-1);%第一項為原始資料，第二項為放大倍數，第三項為採樣資料數量
+
+    for j = 1:N*R
+        x = X(j,1:L+1);
+        filename = strcat(['D:\111專題\stft\raw data-',int2str(L),'_w over_data increase\',type(k,1),'\',type(k,1),'_',num2str(j),'.mat']);    
+    
+    end
+end
+```
