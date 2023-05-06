@@ -2,7 +2,9 @@
 
 ### Find the R peak of the ECG signal. 
 * Verify the right location as Goldindex vector. 
+
 * Assign the variable of index to store the peak index. 
+
 * ECG data 
 - Number 100/102 
 
@@ -77,6 +79,12 @@ fprintf('Se = %.4f , +P = %.4f , DER = %.4f',se,p,der);
 ```
 
 * Result:
+```
+ecg100 TP = 2264 , FP = 10 , FN = 1 , Se = 0.9996 , +P = 0.9956 , DER = 0.0048 
+ecg102 TP = 2121 , FP = 70 , FN = 59 , Se = 0.9729 , +P = 0.9681 , DER = 0.0573
+```
+
 
 ![untitled](https://user-images.githubusercontent.com/68816726/236611851-6841ca07-bf2e-4587-b80c-f0cf6a528e40.jpg)
+
 
