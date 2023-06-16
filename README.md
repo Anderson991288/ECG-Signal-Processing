@@ -129,6 +129,7 @@ b) Data segmentation and generation of grayscale image
 
 ### Reference Paper :
 [1] U. Rajendra Acharya , “A deep convolutional neural network model to classify heartbeats,” Computers in Biology and Medicine , vol. 89, no. 1, pp. 389-396, October 2017.
+
 [2] Jia Wu, Chao Liu, Qiyu Long, Weiyan Hou, “Research on Personal Identity Verification Based on Convolutional Neural Network,” 2019 IEEE 2nd International Conference on Information and Computer Technologies.
 
 
