@@ -103,8 +103,9 @@ end
 
 ![圖片](https://user-images.githubusercontent.com/68816726/236611474-a79fb992-070c-40ed-90df-29d61e990dae.png)
 
-
-### Convert electrocardiosignal into 2-D grayscale instead of traditional ECG.
+* 以下為參考的論文所提出的概念
+  
+### Convert electrocardiosignal into 2D grayscale instead of traditional ECG.
 
 ### Reference Paper : Research on Personal Identity Verification Based on Convolutional Neural Network
 
