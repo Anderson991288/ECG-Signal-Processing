@@ -116,7 +116,7 @@ end
   
 ### Convert electrocardiosignal into 2D grayscale instead of traditional ECG.
 
-### Reference Paper : Research on Personal Identity Verification Based on Convolutional Neural Network
+ Research on Personal Identity Verification Based on Convolutional Neural Network
 
 a) Data structure conversion
  * transforming data from 1D structure of ECG signal to 2D structure data
@@ -126,6 +126,10 @@ b) Data segmentation and generation of grayscale image
   *  Min-Max standardization processing.
  *  Each data formed after the segmentation contains 3600 sample points.
  * generation of the grayscale image
+
+### Reference Paper :
+[1] U. Rajendra Acharya , “A deep convolutional neural network model to classify heartbeats,” Computers in Biology and Medicine , vol. 89, no. 1, pp. 389-396, October 2017.
+[2] Jia Wu, Chao Liu, Qiyu Long, Weiyan Hou, “Research on Personal Identity Verification Based on Convolutional Neural Network,” 2019 IEEE 2nd International Conference on Information and Computer Technologies.
 
 
 
