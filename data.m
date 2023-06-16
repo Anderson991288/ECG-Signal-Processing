@@ -2,7 +2,7 @@ clc;
 close all;
 
 type = ['N';'S';'V';'F';'Q'];
-L = 3600;
+L = 400;
 l  = sqrt(L);
 training = 700;
 for i = 1:5
