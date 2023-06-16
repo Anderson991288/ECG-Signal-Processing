@@ -4,7 +4,6 @@
 
 我們嘗試改變各種長度的資料來做訓練與測試，其中3600 (60*60)與400 (20*20)的表現較為突出，而兩者之中我們選擇400來做討論與分析
 
-![圖片](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/69d05221-82f6-4584-a9d7-02fd22b57295)
 
 ##  利用SMOTE算法，解決F-type與S-type數據較少的問題
 ### SMOTE (Synthetic Minority Over-sampling Technique) :
