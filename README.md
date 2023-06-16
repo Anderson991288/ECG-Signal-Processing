@@ -1,33 +1,13 @@
 # ECG-Signal-Processing
-## Convert electrocardiosignal into 2-D grayscale instead of traditional ECG.
 
-### Reference Paper : Research on Personal Identity Verification Based on Convolutional Neural Network
+## 透過改變資料長度(data length)，改善心律不整疾病判斷準確度
 
-a) Data structure conversion
- * transforming data from 1D structure of ECG signal to 2D structure data
+我們嘗試改變各種長度的資料來做訓練與測試，其中3600 (60*60)與400 (20*20)的表現較為突出，而兩者之中我們選擇400來做討論與分析
 
-b) Data segmentation and generation of grayscale image
+![圖片](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/69d05221-82f6-4584-a9d7-02fd22b57295)
 
-  *  Min-Max standardization processing.
- *  Each data formed after the segmentation contains 3600 sample points.
- * generation of the grayscale image
-
-
-
-
-
-![螢幕擷取畫面 2023-04-23 111210](https://user-images.githubusercontent.com/68816726/233817697-3061fe4b-4822-45ce-80fb-4d9a8fcadf2f.png)
-
-
-![螢幕擷取畫面 2023-04-23 111235](https://user-images.githubusercontent.com/68816726/233817700-548381fb-f91f-492e-855b-a71c87299a5c.png)
-
-
-![圖片](https://user-images.githubusercontent.com/68816726/235293407-ebf3ffec-a059-480f-a283-4208a6b2ec94.png)
-
-![圖片](https://user-images.githubusercontent.com/68816726/235293431-968b70ea-3810-4a3b-ad61-59b0e48b2f5e.png)
-
-
-## SMOTE (Synthetic Minority Over-sampling Technique) :
+##  利用SMOTE算法，解決F-type與S-type數據較少的問題
+### SMOTE (Synthetic Minority Over-sampling Technique) :
 
 【SMOTE 方法 : 合成少數過採樣方法】
 我們引進了新的方法叫做 SMOTE 方法，這是 2002 年提出的一篇論文，主要概念也就是在少數樣本位置近的地方，人工合成一些樣本，整個算法的流程如下 :
@@ -37,7 +17,6 @@ b) Data segmentation and generation of grayscale image
    
 
 
-##  實現SMOTE算法，解決不平衡數據集的問題
 ###  SMOTE:
 - `X_smote = smote(X, N, k)` 
 ### Inputs:
@@ -164,3 +143,33 @@ end
 * 針對結果較好的網路更改Batchsize 做測試
 
 ![圖片](https://user-images.githubusercontent.com/68816726/236611474-a79fb992-070c-40ed-90df-29d61e990dae.png)
+
+
+### Convert electrocardiosignal into 2-D grayscale instead of traditional ECG.
+
+### Reference Paper : Research on Personal Identity Verification Based on Convolutional Neural Network
+
+a) Data structure conversion
+ * transforming data from 1D structure of ECG signal to 2D structure data
+
+b) Data segmentation and generation of grayscale image
+
+  *  Min-Max standardization processing.
+ *  Each data formed after the segmentation contains 3600 sample points.
+ * generation of the grayscale image
+
+
+
+
+
+![螢幕擷取畫面 2023-04-23 111210](https://user-images.githubusercontent.com/68816726/233817697-3061fe4b-4822-45ce-80fb-4d9a8fcadf2f.png)
+
+
+![螢幕擷取畫面 2023-04-23 111235](https://user-images.githubusercontent.com/68816726/233817700-548381fb-f91f-492e-855b-a71c87299a5c.png)
+
+
+![圖片](https://user-images.githubusercontent.com/68816726/235293407-ebf3ffec-a059-480f-a283-4208a6b2ec94.png)
+
+![圖片](https://user-images.githubusercontent.com/68816726/235293431-968b70ea-3810-4a3b-ad61-59b0e48b2f5e.png)
+
+
