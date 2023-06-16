@@ -9,7 +9,7 @@
 ### SMOTE (Synthetic Minority Over-sampling Technique) :
 
 【SMOTE 方法 : 合成少數過採樣方法】
-我們引進了新的方法叫做 SMOTE 方法，這是 2002 年提出的一篇論文，主要概念也就是在少數樣本位置近的地方，人工合成一些樣本，整個算法的流程如下 :
+我們採用了新的方法叫做 SMOTE，這是 2002 年提出的一篇論文，主要概念也就是在少數樣本位置近的地方，人工合成一些樣本，整個算法的流程如下 :
 
     設定一個採樣倍率 N，也就是對每個樣本需要生成幾個合成樣本
     設定一個近鄰值 K ，針對該樣本找出 K 個最近鄰樣本並從中隨機選一個
@@ -23,62 +23,17 @@
 - `N`: Percentage of data-augmentation intended, Typically, N > 100, if N < 100, then N is set to 100. `(scalar)`
 - `k`: number of nearest neighbors to consider while performing augmentation `(scalar)`
  
-### Outputs:
-- `X_smote`: augmented dataset containing original data as well. `(m x d)` matrix, where `m > n`
 
-```
-function [X,C,Xn,Cn] = smote(X, N, k, options)
-    arguments
-        X (:,:) % 觀察矩陣
-        N (:,1) double {mustBeNonnegative} = 1 % 合成量
-        k (:,1) double {mustBePositive,mustBeInteger} = 5 % 考慮的最近鄰居數量
-        options.Class (:,1) {mustBeSameSize(options.Class,X)} % 類向量：決定每個觀察的類別
-        options.SynthObs (:,1) {mustBeSameSize(options.SynthObs,X)} % 合成向量。決定每個觀察作為合成的基數使用的次數
-    end
-```
-
-* 這個函數有四個輸入參數，其中 X 是觀察矩陣，N 是合成量，k 是考慮的最近鄰居數量，options 包含選擇性的類向量和合成向量。
-
-```
-    % Handle optional Class vector
-    if isfield(options,'Class')
-        C = options.Class;
-    else
-        C = ones(size(X,1),1); % 如果未給定類向量，則將所有觀察默認為相同類別：[1]
-    end
-    uC = unique(C); % 類別列表
-    nC = groupcounts(C); % 每個類別的觀察數量
-
-    % Handle N - must have one number for each class
-    if isempty(N) % 如果 N 為空，則執行平衡處理
-        if numel(uC)<2 % 類向量中必須至少包含兩個類別才能進行平衡處理
-            error('Class vector must contain at least 2 classes to balance.');
-        end
-        N = max(nC)./nC-1; % 計算每個類別的過採樣百分比，以達到與多
-```
-
-* 這裡處理可選的類向量。如果 options 中存在 Class，則將其存儲在 C 中。否則，C 被設置為一個大小為 X 行數的向量，並且所有觀察被歸類為類別 1。uC 存儲所有不同的類別，nC 則記錄每個類別的觀察數量。
-
-```
-    % Handle N - must have one number for each class
-    if isempty(N) % 如果 N 為空，則執行平衡處理
-        if numel(uC)<2 % 類向量中必須至少包含兩個類別才能進行平衡處理
-            error('Class vector must contain at least 2 classes to balance.');
-        end
-        N = max(nC)./nC-1; % 計算每個類別的過採樣百分比，以達到與多
-
-```
-
-* 這個程式用於讀取來自文件夾的心跳聲音數據，對其進行SMOTE算法過採樣，然後將其轉換為灰度圖像保存到文件夾中。
+* 這個程式用於讀取來自資料夾的心跳數據，對其進行SMOTE算法過採樣，然後將其轉換為灰階圖存到資料夾中
 
 ```
 type = ['F'; 'S']; % 心跳類型
-L = 400; % 每個心跳聲音樣本的長度
+L = 400; % 每個心跳樣本的長度
 k = 10; % 考慮 5 個最近鄰居
 N = 9; % 過採樣到原始數據集的 1.5 倍大小
 
 for i = 1:size(type, 1)
-    % 讀取當前類型的心跳聲音數據
+    % 讀取目前類型的心跳數據
     X = zeros(500, L);
     for j = 1:500
         load(['D:\111專題\stft\raw data-', int2str(L), '\', type(i,:), '\', type(i,:), '_', num2str(j), '.mat']);
@@ -95,7 +50,7 @@ for i = 1:size(type, 1)
     X_smote = X_smote - min(X_smote(:));
     X_smote = X_smote ./ max(X_smote(:));
     
-    % 將過採樣的數據保存為灰度圖像
+    % 將過採樣的數據存為灰階圖
     L_sqrt = sqrt(L);
     for j = 1:size(X_smote, 1)
         s_x = reshape(X_smote(j,:), L_sqrt, L_sqrt);
@@ -107,7 +62,7 @@ for i = 1:size(type, 1)
     end
 end
 ```
-* 這個程序中， type 是兩種不同類型的心跳聲音類型。對於每種類型，程序會從文件夾中讀取 500 條心跳聲音數據，每條數據的長度都為 L。然後，程序使用SMOTE算法對這些數據進行過採樣，並將其保存為灰度圖像。保存的圖像會按照數據的類型（即 type）進行分組，保存在文件夾
+* 這個程序中， type 是兩種不同類型的心跳聲音類型。對於每種類型，程式會從資料夾中讀取 500 條心跳聲音數據，數據的長度都是 L。然後，程式使用SMOTE對這些數據進行過採樣，並將其存為灰階圖。保存的圖像會按照數據的類型（即 type）進行分組，保存在資料夾
 
 
 * 針對F-type 和 S-type 資料量不足的問題，使用SMOTE來增加資料量。
