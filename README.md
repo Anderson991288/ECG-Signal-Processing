@@ -4,6 +4,11 @@
 
 我們嘗試改變各種長度的資料來做訓練與測試，其中3600 (60 * 60)與400 (20 * 20)的表現較為突出，而兩者之中我們選擇400來做討論與分析
 
+![圖片](https://user-images.githubusercontent.com/68816726/235293407-ebf3ffec-a059-480f-a283-4208a6b2ec94.png)
+
+![圖片](https://user-images.githubusercontent.com/68816726/235293431-968b70ea-3810-4a3b-ad61-59b0e48b2f5e.png)
+
+
 
 ##  利用SMOTE算法，解決F-type與S-type數據較少的問題
 ### SMOTE (Synthetic Minority Over-sampling Technique) :
@@ -120,10 +125,5 @@ b) Data segmentation and generation of grayscale image
 
 
 ![螢幕擷取畫面 2023-04-23 111235](https://user-images.githubusercontent.com/68816726/233817700-548381fb-f91f-492e-855b-a71c87299a5c.png)
-
-
-![圖片](https://user-images.githubusercontent.com/68816726/235293407-ebf3ffec-a059-480f-a283-4208a6b2ec94.png)
-
-![圖片](https://user-images.githubusercontent.com/68816726/235293431-968b70ea-3810-4a3b-ad61-59b0e48b2f5e.png)
 
 
