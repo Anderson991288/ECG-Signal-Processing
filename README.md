@@ -10,6 +10,7 @@
 
 
 
+
 ##  利用SMOTE算法，解決F-type與S-type數據較少的問題
 ### SMOTE (Synthetic Minority Over-sampling Technique) :
 
