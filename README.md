@@ -29,7 +29,10 @@ E3 33 F3 80 10 F3 E5 33 F3 E3 33 F3
 20 02 2D 01 38 00 5A 00 8C 00
 ```
 * 每個字節表示不同的標註訊息，例如心跳類型和R波位置。
+  
+### MIT-BIH數據集包含了以360Hz的取樣率錄製的48個不同受試者的心電圖(ECG)訊號。數據庫中將心律不整分為5種類別，如下表:
 
+![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/3a044d66-7f51-4819-ab5f-bbd25f094c30)
 
 
 ## 透過改變資料長度(data length)，改善心律不整疾病判斷準確度
