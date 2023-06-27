@@ -39,9 +39,7 @@ E3 33 F3 80 10 F3 E5 33 F3 E3 33 F3
 
 我們嘗試改變各種長度的資料來做訓練與測試，其中3600 (60 * 60)與400 (20 * 20)的表現較為突出，而兩者之中我們選擇400來做討論與分析
 
-![圖片](https://user-images.githubusercontent.com/68816726/235293407-ebf3ffec-a059-480f-a283-4208a6b2ec94.png)
-
-![圖片](https://user-images.githubusercontent.com/68816726/235293431-968b70ea-3810-4a3b-ad61-59b0e48b2f5e.png)
+![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/eff0e7bf-8ee5-4abd-880a-ec5f9e46e346)
 
 
 
