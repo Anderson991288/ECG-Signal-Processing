@@ -45,7 +45,7 @@ E3 33 F3 80 10 F3 E5 33 F3 E3 33 F3
 
 
 ##  利用SMOTE算法，解決F-type與S-type數據較少的問題
-### SMOTE (Synthetic Minority Over-sampling Technique) :
+### SMOTE (Synthetic Minority Over-sampling Technique) 
 
 【SMOTE 方法 : 合成少數過採樣方法】
 我們採用了一種方法叫做 SMOTE，主要概念就是在少數樣本位置近的地方，人工合成一些樣本，整個算法的流程如下 :
@@ -55,13 +55,14 @@ E3 33 F3 80 10 F3 E5 33 F3 E3 33 F3
    
 
 
-###  SMOTE:
+###  SMOTE
 - `X_smote = smote(X, N, k)` 
-### Inputs:
+### Inputs
 - `X`: Original dataset `(n x d)` matrix
 - `N`: Percentage of data-augmentation intended, Typically, N > 100, if N < 100, then N is set to 100. `(scalar)`
 - `k`: number of nearest neighbors to consider while performing augmentation `(scalar)`
  
+### Code
 
 * 這個程式用於讀取來自資料夾的心跳數據，對其進行SMOTE算法過採樣，然後將其轉換為灰階圖存到資料夾中
 
@@ -158,7 +159,7 @@ end
 
 * 以下為參考論文所提出的概念
   
-### Convert electrocardiosignal into 2D grayscale instead of traditional ECG.
+### Convert electrocardiosignal into 2D grayscale instead of traditional ECG
 
  Research on Personal Identity Verification Based on Convolutional Neural Network
 
@@ -171,7 +172,7 @@ b) Data segmentation and generation of grayscale image
  *  Each data formed after the segmentation contains 3600 sample points.
  * generation of the grayscale image
 
-### Reference Paper :
+### Reference Paper 
 [1] U. Rajendra Acharya , “A deep convolutional neural network model to classify heartbeats,” Computers in Biology and Medicine , vol. 89, no. 1, pp. 389-396, October 2017.
 
 [2] Jia Wu, Chao Liu, Qiyu Long, Weiyan Hou, “Research on Personal Identity Verification Based on Convolutional Neural Network,” 2019 IEEE 2nd International Conference on Information and Computer Technologies.
