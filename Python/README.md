@@ -1,4 +1,4 @@
-![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/ad5e8409-bd45-4eb4-ae84-d391249a7171)### SMOTE: Imbalanced Dataset Processing
+### SMOTE: Imbalanced Dataset Processing
 
 ```
 import imblearn
