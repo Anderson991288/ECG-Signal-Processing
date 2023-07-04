@@ -15,6 +15,7 @@ train_new_df=pd.concat([wave_smote, id_smote],axis='columns')
 print(train_new_df.shape)
 ```
 * 將所有類別的心跳都調整到與數量最多的相同
+  
   Classes: ['N': 0, 'S': 1, 'V': 2, 'F': 3, 'Q': 4]
   
 ![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/3a0b173d-2e92-4f80-ae5a-fa62d63927a8)
