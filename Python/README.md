@@ -1,4 +1,4 @@
-### SMOTE: Imbalanced Dataset Processing
+## SMOTE: Imbalanced Dataset Processing
 
 ```
 import imblearn
