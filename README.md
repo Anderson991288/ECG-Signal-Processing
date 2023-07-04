@@ -129,6 +129,19 @@ for k = 4
 end
 ```
 
+* 選擇一個CNN網路，如ResNet-18，並更改MATLAB預設的fullyConnectedLayer與classificationLayer。fullyConnectedLayer的OutputSize改成5
+
+![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/35b78a40-71af-420b-bed2-24477939f404)
+
+* 訓練結果
+  
+![圖片1](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/ac2799b1-a571-4cbf-b8d3-e54d51feb451)
+
+* 測試結果
+  
+![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/665ef8e6-a4a8-4ec6-95f4-9f715aaa1482)
+  
+
 * 使用SMOTE後的結果，分別使用不同網路做測試
 
 ![圖片](https://user-images.githubusercontent.com/68816726/236611552-920e5e36-a6b8-4be8-aaae-d690a9400ad5.png)
