@@ -1,4 +1,4 @@
-### SMOTE: Imbalanced Dataset Processing
+![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/ad5e8409-bd45-4eb4-ae84-d391249a7171)### SMOTE: Imbalanced Dataset Processing
 
 ```
 import imblearn
@@ -23,5 +23,7 @@ print(train_new_df.shape)
 
 ![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/7c66e164-45f9-499d-ad2a-1475f6f79816)
 
-
+* 使用SMOTE的前後比較
+* 使用SMOTE後loss較低而準確率提升
+  
 ![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/ea9033be-cf9f-4d23-865e-09cbd0491c23)
