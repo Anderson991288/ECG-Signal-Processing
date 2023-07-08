@@ -41,6 +41,9 @@ print(train_new_df.shape)
    * 偽負(FN)：模型錯誤地預測正類別為負類別。
    * 偽正(FP)：模型錯誤地預測負類別為正類別。
    * 真負(TN)：模型正確地預測負類別。
+     
+  • 這四個數值可以用來計算許多評估分類器效能的指標，例如精確度（Precision）、召回率（Recall）、F1 分數（F1 Score）等。
+
 
 ![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/5f9688f0-917b-402c-becf-3c5d6602b0b7)
 
