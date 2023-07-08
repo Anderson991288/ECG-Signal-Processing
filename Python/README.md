@@ -30,3 +30,12 @@ print(train_new_df.shape)
 
   
 ![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/ea9033be-cf9f-4d23-865e-09cbd0491c23)
+
+* 混淆矩陣(confusion matrix)
+  
+  •	 用途：用於描述分類模型的性能。
+  
+  •	以模型得出的預測結果與正解相互對應，分成四類（預測為真/假、正解為真/假）所組成的矩陣。
+
+  
+![圖片1](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/06163b6b-8e88-4f26-9acb-c22389751f2a)
