@@ -45,5 +45,7 @@ print(train_new_df.shape)
 ![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/5f9688f0-917b-402c-becf-3c5d6602b0b7)
 
 
+* 下圖中，對角線為預測正確。而其他部分為預測錯誤。
+* 例如True Labels(真實的類別)為1但Predicted Labels(模型預設的類別)為0，也就是本來應該要分到1但模型將他分到0，這樣的數量有215個
   
 ![圖片1](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/06163b6b-8e88-4f26-9acb-c22389751f2a)
