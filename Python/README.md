@@ -37,6 +37,11 @@ print(train_new_df.shape)
   
   •	以模型得出的預測結果與正解相互對應，分成四類（預測為真/假、正解為真/假）所組成的矩陣。
 
+   * 真正(TP)：模型正確地預測正類別。
+   * 偽負(FN)：模型錯誤地預測正類別為負類別。
+   * 偽正(FP)：模型錯誤地預測負類別為正類別。
+   * 真負(TN)：模型正確地預測負類別。
+
 ![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/5f9688f0-917b-402c-becf-3c5d6602b0b7)
 
 
