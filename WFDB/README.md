@@ -16,3 +16,5 @@ wfdb.dl_database('mitdb', 'mitdb')
 record = wfdb.rdsamp('mitdb/103', sampto=3000)
 annotation = wfdb.rdann('mitdb/103', 'atr', sampto=3000)
 ```
+
+![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/4cd693e0-125b-48d2-8606-cb72d8d2e2f0)
