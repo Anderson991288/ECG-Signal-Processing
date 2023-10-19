@@ -34,6 +34,10 @@ data source : https://www.physionet.org/content/mitdb/1.0.0/
 
 WFDB Toolbox for MATLAB : https://archive.physionet.org/physiotools/matlab/wfdb-app-matlab/
 
+開好6個資料夾再執行 data.m
+![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/d7e76d0a-1984-43a0-b980-609aaf0bddf0)
+
+
 ### MIT-BIH數據集包含了以360Hz的取樣率錄製的48個不同受試者的心電圖(ECG)訊號。數據庫中將心律不整分為5種類別，如下表:
 
 ![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/3a044d66-7f51-4819-ab5f-bbd25f094c30)
