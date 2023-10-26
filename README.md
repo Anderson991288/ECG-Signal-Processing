@@ -157,6 +157,8 @@ end
 
 
 * 使用SMOTE後的結果，分別使用不同網路做測試
+  
+![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/1f8f801a-ce39-4635-a2fe-0c48ca7613fa)
 
 ![圖片](https://user-images.githubusercontent.com/68816726/236611552-920e5e36-a6b8-4be8-aaae-d690a9400ad5.png)
 
