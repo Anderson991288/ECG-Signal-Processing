@@ -167,7 +167,8 @@ end
 
 * 下圖為**未使用**SMOTE 所產出的結果，與上圖比較可看出使用SMOTE後的準確度有一定程度的提升
 
-![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/5510ff05-2999-47fb-a0bf-315f12149751)
+
+![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/d1db3fd1-9035-45bc-90c5-1cb26f83dec9)
 
 
 
