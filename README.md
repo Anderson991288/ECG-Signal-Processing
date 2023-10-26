@@ -157,14 +157,13 @@ end
 
 
 * 使用SMOTE後的結果，分別使用不同網路做測試
+* 並針對結果較好的網路更改Batchsize 做測試
   
 ![image](https://github.com/Anderson991288/ECG-Signal-Processing/assets/68816726/1f8f801a-ce39-4635-a2fe-0c48ca7613fa)
 
-![圖片](https://user-images.githubusercontent.com/68816726/236611552-920e5e36-a6b8-4be8-aaae-d690a9400ad5.png)
 
-* 針對結果較好的網路更改Batchsize 做測試
 
-![圖片](https://user-images.githubusercontent.com/68816726/236611474-a79fb992-070c-40ed-90df-29d61e990dae.png)
+
 
 * 下圖為**未使用**SMOTE 所產出的結果，與上圖比較可看出使用SMOTE後的準確度有一定程度的提升
 
